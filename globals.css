@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MARKDOWN STYLES: No syntax error, plugin required above! */
+.markdown {
+  @apply prose prose-slate max-w-none;
+}
+[data-theme="gradient"] .markdown {
+  @apply prose-invert prose-lg;
+}
+[data-theme="classic"] .markdown {
+  @apply prose-lg;
+}
+[data-theme="minimal"] .markdown {
+  @apply prose prose-neutral;
+}
